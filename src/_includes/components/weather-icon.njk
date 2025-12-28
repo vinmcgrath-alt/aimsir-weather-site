@@ -9,11 +9,14 @@
 } %}
 
 {% set key = weather | lower | replace(" ", "") %}
-{% set iconPath = icons[key] or "/images/icon-default.png" %}
+
+{# FIXED fallback path #}
+{% set iconPath = icons[key] or "/aimsir-weather-site/images/icon-default.png" %}
 
 <img 
   src="{{ iconPath }}" 
   alt="{{ weather }} icon" 
   class="weather-icon"
 >
+
 
