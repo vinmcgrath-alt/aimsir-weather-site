@@ -1,6 +1,6 @@
 /* Hero banner background */
 section.hero {
-  background-image: url("images/banner1.jpg");
+  background-image: url("/aimsir-weather-site/images/banner1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
