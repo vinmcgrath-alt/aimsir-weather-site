@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+
+  <!-- Bulma -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<!-- Flavicon code -->
+<link rel="icon" type="image/png" href="/images/aimsirflavicon.png">
+<link rel="shortcut icon" href="/images/aimsirflavicon.png">
+
+<body>
+
+  <!-- HERO HEADER WITH LOGO ABOVE NAVIGATION -->
+  <section class="hero is-bold">
+
+    <!-- LOGO FIRST -->
+    <div class="hero-body" style="padding-top: 0.5rem; padding-bottom: 0.5rem;">
+      <div class="container has-text-centered">
+        <img src="/images/aimsirlogowhite.png" alt="Aimsir Logo" style="max-height: 10rem;">
+      </div>
+    </div>
+
+    <!-- Navigation tabs in hero footer -->
+    <div class="hero-foot">
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-menu is-active">
+      <div class="navbar-start is-flex is-justify-content-center" style="width: 100%;">
+
+        <a class="navbar-item" href="/">Dashboard</a>
+        <!-- City dropdown -->
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-item">Cities</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="/cities/dublin/">Dublin</a>
+            <a class="navbar-item" href="/cities/cork/">Cork</a>
+            <a class="navbar-item" href="/cities/limerick/">Limerick</a>
+            <a class="navbar-item" href="/cities/galway/">Galway</a>
+            <a class="navbar-item" href="/cities/waterford/">Waterford</a>
+            <a class="navbar-item" href="/cities/belfast/">Belfast</a>
+          </div>
+        </div>
+        <!-- Tabs again -->
+        <a class="navbar-item" href="/preferences/">Preferences</a>
+        <a class="navbar-item" href="/bonus/">Irish Weather Facts</a>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main class="section">
+    <div class="container">
+      
+<h1 class="title has-text-left" style="padding: 0;">
+  <b>Aimsir:</b> Your Irish Weather Assistant
+</h1>
+
+<div class="content">
+
+  <p>
+    Ireland is known as the Emerald Isle, and part of that is due to our unique climate.
+    Sitting on the edge of Europe, surrounded by water, the Atlantic Ocean and its prevailing winds
+    shape our weather. That means three things:
+  </p>
+
+  <ol>
+    <li>We have a relatively mild climate (it's rarely extreme!)</li>
+    <li>It can change quickly (four seasons in a day!)</li>
+    <li>It can rain — a lot (bring a coat or an umbrella!)</li>
+  </ol>
+
+  <p>
+    So in many ways, it's a great climate for getting out and exploring — you just need to know how to do that.
+  </p>
+
+  <p>
+    That’s why we created <b>Aimsir</b> — to provide specific, localised weather updates and suggested activities
+    for both locals and visitors. You can also tailor the experience to your own preferences for more relevant results.
+  </p>
+
+  <p><b>Select a city below to view a more detailed forecast.</b></p>
+
+</div>
+
+<div class="columns is-multiline">
+  
+    <div class="column is-one-third">
+  <a href="/cities/dublin/" class="card-link">
+
+    <div class="card">
+
+      <div class="card-image">
+        <figure class="image is-16by9">
+          <img src="/images/dublin.png" alt="Dublin image">
+        </figure>
+      </div>
+
+      <div class="card-content has-text-centered">
+        <p class="title is-4"><b>Dublin</b></p>
+
+        <p class="subtitle is-6"><b>
+          
+          
+
+
+
+
+<img 
+  src="/images/icon-cloudy.png" 
+  alt="Cloudy icon" 
+  class="weather-icon"
+>
+
+
+          Cloudy • 11°C
+        </b></p>
+      </div>
+
+    </div>
+
+  </a>
+</div>
+
+  
+    <div class="column is-one-third">
+  <a href="/cities/cork/" class="card-link">
+
+    <div class="card">
+
+      <div class="card-image">
+        <figure class="image is-16by9">
+          <img src="/images/cork.png" alt="Cork image">
+        </figure>
+      </div>
+
+      <div class="card-content has-text-centered">
+        <p class="title is-4"><b>Cork</b></p>
+
+        <p class="subtitle is-6"><b>
+          
+          
+
+
+
+
+<img 
+  src="/images/icon-lightrain.png" 
+  alt="Light Rain icon" 
+  class="weather-icon"
+>
+
+
+          Light Rain • 10°C
+        </b></p>
+      </div>
+
+    </div>
+
+  </a>
+</div>
+
+  
+    <div class="column is-one-third">
+  <a href="/cities/limerick/" class="card-link">
+
+    <div class="card">
+
+      <div class="card-image">
+        <figure class="image is-16by9">
+          <img src="/images/limerick.png" alt="Limerick image">
+        </figure>
+      </div>
+
+      <div class="card-content has-text-centered">
+        <p class="title is-4"><b>Limerick</b></p>
+
+        <p class="subtitle is-6"><b>
+          
+          
+
+
+
+
+<img 
+  src="/images/icon-overcast.png" 
+  alt="Overcast icon" 
+  class="weather-icon"
+>
+
+
+          Overcast • 9°C
+        </b></p>
+      </div>
+
+    </div>
+
+  </a>
+</div>
+
+  
+    <div class="column is-one-third">
+  <a href="/cities/galway/" class="card-link">
+
+    <div class="card">
+
+      <div class="card-image">
+        <figure class="image is-16by9">
+          <img src="/images/galway.png" alt="Galway image">
+        </figure>
+      </div>
+
+      <div class="card-content has-text-centered">
+        <p class="title is-4"><b>Galway</b></p>
+
+        <p class="subtitle is-6"><b>
+          
+          
+
+
+
+
+<img 
+  src="/images/icon-windy.png" 
+  alt="Windy icon" 
+  class="weather-icon"
+>
+
+
+          Windy • 8°C
+        </b></p>
+      </div>
+
+    </div>
+
+  </a>
+</div>
+
+  
+    <div class="column is-one-third">
+  <a href="/cities/waterford/" class="card-link">
+
+    <div class="card">
+
+      <div class="card-image">
+        <figure class="image is-16by9">
+          <img src="/images/waterford.png" alt="Waterford image">
+        </figure>
+      </div>
+
+      <div class="card-content has-text-centered">
+        <p class="title is-4"><b>Waterford</b></p>
+
+        <p class="subtitle is-6"><b>
+          
+          
+
+
+
+
+<img 
+  src="/images/icon-sunnyspells.png" 
+  alt="Sunny Spells icon" 
+  class="weather-icon"
+>
+
+
+          Sunny Spells • 12°C
+        </b></p>
+      </div>
+
+    </div>
+
+  </a>
+</div>
+
+  
+    <div class="column is-one-third">
+  <a href="/cities/belfast/" class="card-link">
+
+    <div class="card">
+
+      <div class="card-image">
+        <figure class="image is-16by9">
+          <img src="/images/belfast.png" alt="Belfast image">
+        </figure>
+      </div>
+
+      <div class="card-content has-text-centered">
+        <p class="title is-4"><b>Belfast</b></p>
+
+        <p class="subtitle is-6"><b>
+          
+          
+
+
+
+
+<img 
+  src="/images/icon-showers.png" 
+  alt="Showers icon" 
+  class="weather-icon"
+>
+
+
+          Showers • 7°C
+        </b></p>
+      </div>
+
+    </div>
+
+  </a>
+</div>
+
+  
+</div>
+
+    </div>
+  </main>
+
+<!-- FOOTER -->
+<footer class="section" style="
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 1.5rem 1rem;
+  background-color: transparent;
+">
+
+  <div class="columns is-vcentered is-mobile" style="align-items: flex-end;">
+
+    <!-- Left spacer -->
+    <div class="column is-3"></div>
+
+    <!-- Centre: Navigation + Attribution -->
+    <div class="column has-text-centered">
+      <nav style="margin-bottom: 0.5rem;">
+        <a href="/index.html" style="margin: 0 1rem; color: #000;">Dashboard</a>
+        <a href="/preferences/" style="margin: 0 1rem; color: #000;">Preferences</a>
+        <a href="/facts/" style="margin: 0 1rem; color: #000;">Irish Weather</a>
+      </nav>
+
+      <p style="color: #000; font-size: 0.9rem; margin-top: 0.5rem;">
+        Website by Vincent McGrath @ SETU 2025
+      </p>
+    </div>
+
+    <!-- Right: Logo fixed to edge -->
+    <div class="column is-3 has-text-right" style="padding-right: 1rem;">
+      <img src="/images/aimsirlogo.png" 
+           alt="Aimsir Logo" 
+           style="max-height: 4rem;">
+    </div>
+
+  </div>
+
+</footer>
+
+</body>
+</html>

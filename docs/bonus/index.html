@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Irish Weather Facts</title>
+
+  <!-- Bulma -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<!-- Flavicon code -->
+<link rel="icon" type="image/png" href="/images/aimsirflavicon.png">
+<link rel="shortcut icon" href="/images/aimsirflavicon.png">
+
+<body>
+
+  <!-- HERO HEADER WITH LOGO ABOVE NAVIGATION -->
+  <section class="hero is-bold">
+
+    <!-- LOGO FIRST -->
+    <div class="hero-body" style="padding-top: 0.5rem; padding-bottom: 0.5rem;">
+      <div class="container has-text-centered">
+        <img src="/images/aimsirlogowhite.png" alt="Aimsir Logo" style="max-height: 10rem;">
+      </div>
+    </div>
+
+    <!-- Navigation tabs in hero footer -->
+    <div class="hero-foot">
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-menu is-active">
+      <div class="navbar-start is-flex is-justify-content-center" style="width: 100%;">
+
+        <a class="navbar-item" href="/">Dashboard</a>
+        <!-- City dropdown -->
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-item">Cities</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="/cities/dublin/">Dublin</a>
+            <a class="navbar-item" href="/cities/cork/">Cork</a>
+            <a class="navbar-item" href="/cities/limerick/">Limerick</a>
+            <a class="navbar-item" href="/cities/galway/">Galway</a>
+            <a class="navbar-item" href="/cities/waterford/">Waterford</a>
+            <a class="navbar-item" href="/cities/belfast/">Belfast</a>
+          </div>
+        </div>
+        <!-- Tabs again -->
+        <a class="navbar-item" href="/preferences/">Preferences</a>
+        <a class="navbar-item" href="/bonus/">Irish Weather Facts</a>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main class="section">
+    <div class="container">
+      
+<h1 class="title">Irish Weather</h1>
+
+<p>
+  People have lived in Ireland since the end of the last Ice Age, and through all that time our weather has remained a reliable conversation starter.
+  Here at <b>Aimsir</b>, we aim to give you the information you need to plan your trips and activities with confidence.
+  Ireland experiences over 150 days of rain per year (though rarely all day). The warmest month is typically July, while January is usually the coldest.
+  The west coast receives the most rainfall, and the south‑east the least. Snow is uncommon, but can occur in higher elevations — though you won’t need skis.
+</p><br>
+
+<p>
+  In sun it's the greatest place to be... but don't fear after thousands of years we've learned how to enjoy a good time in all weathers!
+</p><br>
+
+<h2 class="title is-4" style="margin-top:2rem;">Check out some ideas for every weathers in each city:</h2>
+
+<div class="columns">
+
+ <!-- Hot Weather -->
+  <div class="column">
+    <div class="card">
+      <div class="card-image">
+        <figure class="image is-4by3">
+          <img src="/images/hot-weather.jpg" alt="Hot Weather">
+        </figure>
+      </div>
+      <div class="card-content has-text-centered">
+        <p class="title is-6">Hot Weather</p>
+      </div>
+    </div>
+  </div>
+   <!-- Cold Weather -->
+  <div class="column">
+    <div class="card">
+      <div class="card-image">
+        <figure class="image is-4by3">
+          <img src="/images/cold-weather.jpg" alt="Cold Weather">
+        </figure>
+      </div>
+      <div class="card-content has-text-centered">
+        <p class="title is-6">Cold Weather</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Wet Weather -->
+  <div class="column">
+    <div class="card">
+      <div class="card-image">
+        <figure class="image is-4by3">
+          <img src="/images/wet-weather.jpg" alt="Wet Weather">
+        </figure>
+      </div>
+      <div class="card-content has-text-centered">
+        <p class="title is-6">Wet Weather</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<h2 class="title is-4" style="margin-top:2rem;">Why not explore the table of Irish weather records here:</h2>
+
+<table class="table is-striped is-fullwidth is-hoverable">
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Record</th>
+      <th>Location</th>
+      <th>Year</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <!-- Temperature Records -->
+    <tr>
+      <td><strong>Highest Temperature (Ever)</strong></td>
+      <td>33.3°C</td>
+      <td>Kilkenny Castle</td>
+      <td>1887</td>
+    </tr>
+
+    <tr>
+      <td><strong>Highest Temperature (20th Century)</strong></td>
+      <td>32.5°C</td>
+      <td>Boora, Co. Offaly</td>
+      <td>1976</td>
+    </tr>
+
+    <tr>
+      <td><strong>Lowest Temperature (Ever)</strong></td>
+      <td>-19.1°C</td>
+      <td>Markree, Co. Sligo</td>
+      <td>1881</td>
+    </tr>
+
+    <tr>
+      <td><strong>Lowest Temperature (20th Century)</strong></td>
+      <td>-18.8°C</td>
+      <td>Lullymore, Co. Kildare</td>
+      <td>1979</td>
+    </tr>
+
+    <!-- Rainfall Records -->
+    <tr>
+      <td><strong>Driest Year</strong></td>
+      <td>356.6 mm</td>
+      <td>Glasnevin</td>
+      <td>1887</td>
+    </tr>
+
+    <tr>
+      <td><strong>Wettest Month</strong></td>
+      <td>790.0 mm</td>
+      <td>Cummeragh Mountains</td>
+      <td>1996</td>
+    </tr>
+
+    <tr>
+      <td><strong>Wettest Year</strong></td>
+      <td>3,964.9 mm</td>
+      <td>Ballaghbeena Gap</td>
+      <td>1960</td>
+    </tr>
+
+    <tr>
+      <td><strong>Greatest Daily Total</strong></td>
+      <td>243.5 mm</td>
+      <td>Cloone Lake</td>
+      <td>1993</td>
+    </tr>
+
+  </tbody>
+</table>
+
+    </div>
+  </main>
+
+<!-- FOOTER -->
+<footer class="section" style="
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 1.5rem 1rem;
+  background-color: transparent;
+">
+
+  <div class="columns is-vcentered is-mobile" style="align-items: flex-end;">
+
+    <!-- Left spacer -->
+    <div class="column is-3"></div>
+
+    <!-- Centre: Navigation + Attribution -->
+    <div class="column has-text-centered">
+      <nav style="margin-bottom: 0.5rem;">
+        <a href="/index.html" style="margin: 0 1rem; color: #000;">Dashboard</a>
+        <a href="/preferences/" style="margin: 0 1rem; color: #000;">Preferences</a>
+        <a href="/facts/" style="margin: 0 1rem; color: #000;">Irish Weather</a>
+      </nav>
+
+      <p style="color: #000; font-size: 0.9rem; margin-top: 0.5rem;">
+        Website by Vincent McGrath @ SETU 2025
+      </p>
+    </div>
+
+    <!-- Right: Logo fixed to edge -->
+    <div class="column is-3 has-text-right" style="padding-right: 1rem;">
+      <img src="/images/aimsirlogo.png" 
+           alt="Aimsir Logo" 
+           style="max-height: 4rem;">
+    </div>
+
+  </div>
+
+</footer>
+
+</body>
+</html>

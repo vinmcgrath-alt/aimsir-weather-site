@@ -1,0 +1,106 @@
+/* Hero banner background */
+section.hero {
+  background-image: url("/images/banner1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Pale grey footer */
+.footer {
+  background-color: #e5e7eb !important;
+}
+
+/* ============================
+   NAVBAR — unified styling
+   ============================ */
+
+/* Make all navbar text white + thicker */
+.navbar-item,
+.navbar-link {
+  color: white !important;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.25);
+}
+
+/* Dropdown items also white */
+.navbar-dropdown .navbar-item {
+  color: #4a4a4a !important;
+}
+
+/* Hover effect: subtle white tint */
+.navbar-item:hover,
+.navbar-link:hover,
+.navbar-dropdown .navbar-item:hover {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  color: white !important;
+}
+
+/* Burger menu icon (mobile) */
+.navbar-burger span {
+  background-color: white !important;
+}
+
+/* Remove Bulma's default navbar background */
+.navbar {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.banner-slim {
+  height: 250px;
+  overflow: hidden;
+}
+
+.banner-slim img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay on banner in city pages */
+.weather-overlay {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  background: rgba(0, 0, 0, 0.45);
+  padding: 1rem 1.25rem;
+  border-radius: 6px;
+  max-width: 80%;
+  color: white !important;
+}
+
+.weather-overlay p,
+.weather-overlay strong,
+.weather-overlay h2 {
+  color: white !important;
+}
+
+/* city card css */
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.weather-icon {
+  height: 5rem;
+  vertical-align: middle;
+  margin-right: 0.3rem;
+}
+
+/* city card css header */
+.forecast-day {
+  background-color: #272213; /* or your exact logo green */
+  color: white;
+  padding: 0.5rem;
+  border-radius: 4px 4px 0 0;
+  margin: -1rem -1rem 1rem -1rem; /* pulls it to the card edges */
+  text-align: center;
+}
+
+.forecast-wrapper {
+  background-color: rgba(46, 125, 50, 0.08); /* subtle Aimsir green tint */
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}

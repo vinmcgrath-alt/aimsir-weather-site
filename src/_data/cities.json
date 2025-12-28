@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Dublin",
+    "slug": "dublin",
+    "image": "/images/dublin.png",
+    "banner": "/images/dublin.png",
+    "today": { "weather": "Cloudy", "temp": 11, "wind": 14 },
+    "forecast": [
+      { "day": "Monday", "weather": "Cloudy", "temp": 11, "wind": 12 },
+      { "day": "Tuesday", "weather": "Light Rain", "temp": 10, "wind": 18 },
+      { "day": "Wednesday", "weather": "Showers", "temp": 9, "wind": 20 },
+      { "day": "Thursday", "weather": "Sunny Spells", "temp": 12, "wind": 10 },
+      { "day": "Friday", "weather": "Windy", "temp": 8, "wind": 26 },
+      { "day": "Saturday", "weather": "Overcast", "temp": 9, "wind": 14 },
+      { "day": "Sunday", "weather": "Clear", "temp": 7, "wind": 8 }
+    ]
+  },
+  {
+    "name": "Cork",
+    "slug": "cork",
+    "image": "/images/cork.png",
+    "banner": "/images/cork.png",
+    "today": { "weather": "Light Rain", "temp": 10, "wind": 20 },
+    "forecast": [
+      { "day": "Monday", "weather": "Light Rain", "temp": 10, "wind": 18 },
+      { "day": "Tuesday", "weather": "Showers", "temp": 9, "wind": 22 },
+      { "day": "Wednesday", "weather": "Cloudy", "temp": 11, "wind": 14 },
+      { "day": "Thursday", "weather": "Windy", "temp": 8, "wind": 28 },
+      { "day": "Friday", "weather": "Sunny Spells", "temp": 12, "wind": 12 },
+      { "day": "Sat", "weather": "Overcast", "temp": 9, "wind": 16 },
+      { "day": "Sunday", "weather": "Clear", "temp": 7, "wind": 10 }
+    ]
+  },
+  {
+    "name": "Limerick",
+    "slug": "limerick",
+    "image": "/images/limerick.png",
+    "banner": "/images/limerick.png",
+    "today": { "weather": "Overcast", "temp": 9, "wind": 16 },
+    "forecast": [
+      { "day": "Monday", "weather": "Overcast", "temp": 9, "wind": 14 },
+      { "day": "Tuesday", "weather": "Cloudy", "temp": 10, "wind": 12 },
+      { "day": "Wednesday", "weather": "Light Rain", "temp": 9, "wind": 20 },
+      { "day": "Thursday", "weather": "Showers", "temp": 8, "wind": 22 },
+      { "day": "Friday", "weather": "Sunny Spells", "temp": 11, "wind": 10 },
+      { "day": "Saturday", "weather": "Windy", "temp": 7, "wind": 26 },
+      { "day": "Sunday", "weather": "Clear", "temp": 6, "wind": 8 }
+    ]
+  },
+  {
+    "name": "Galway",
+    "slug": "galway",
+    "image": "/images/galway.png",
+    "banner": "/images/galway.png",
+    "today": { "weather": "Windy", "temp": 8, "wind": 28 },
+    "forecast": [
+      { "day": "Monday", "weather": "Windy", "temp": 8, "wind": 28 },
+      { "day": "Tuesday", "weather": "Showers", "temp": 7, "wind": 22 },
+      { "day": "Wednesday", "weather": "Cloudy", "temp": 9, "wind": 14 },
+      { "day": "Thursday", "weather": "Light Rain", "temp": 8, "wind": 18 },
+      { "day": "Friday", "weather": "Sunny Spells", "temp": 10, "wind": 12 },
+      { "day": "Saturday", "weather": "Overcast", "temp": 9, "wind": 16 },
+      { "day": "Sunday", "weather": "Clear", "temp": 6, "wind": 10 }
+    ]
+  },
+  {
+    "name": "Waterford",
+    "slug": "waterford",
+    "image": "/images/waterford.png",
+    "banner": "/images/waterford.png",
+    "today": { "weather": "Sunny Spells", "temp": 12, "wind": 10 },
+    "forecast": [
+      { "day": "Monday", "weather": "Sunny Spells", "temp": 12, "wind": 10 },
+      { "day": "Tuesday", "weather": "Cloudy", "temp": 11, "wind": 12 },
+      { "day": "Wednesday", "weather": "Light Rain", "temp": 10, "wind": 18 },
+      { "day": "Thursday", "weather": "Showers", "temp": 9, "wind": 20 },
+      { "day": "Friday", "weather": "Windy", "temp": 8, "wind": 26 },
+      { "day": "Saturday", "weather": "Overcast", "temp": 9, "wind": 14 },
+      { "day": "Sunday", "weather": "Clear", "temp": 7, "wind": 8 }
+    ]
+  },
+  {
+    "name": "Belfast",
+    "slug": "belfast",
+    "image": "/images/belfast.png",
+    "banner": "/images/belfast.png",
+    "today": { "weather": "Showers", "temp": 7, "wind": 18 },
+    "forecast": [
+      { "day": "Monday", "weather": "Showers", "temp": 7, "wind": 18 },
+      { "day": "Tuesday", "weather": "Cloudy", "temp": 8, "wind": 14 },
+      { "day": "Wednesday", "weather": "Light Rain", "temp": 7, "wind": 20 },
+      { "day": "Thursday", "weather": "Windy", "temp": 6, "wind": 28 },
+      { "day": "Friday", "weather": "Sunny Spells", "temp": 9, "wind": 12 },
+      { "day": "Saturday", "weather": "Overcast", "temp": 8, "wind": 16 },
+      { "day": "Sunday", "weather": "Clear", "temp": 5, "wind": 8 }
+    ]
+  }
+]

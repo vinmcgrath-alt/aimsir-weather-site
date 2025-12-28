@@ -1,0 +1,19 @@
+{% set icons = {
+  "cloudy": "/images/icon-cloudy.png",
+  "lightrain": "/images/icon-lightrain.png",
+  "showers": "/images/icon-showers.png",
+  "sunnyspells": "/images/icon-sunnyspells.png",
+  "windy": "/images/icon-windy.png",
+  "overcast": "/images/icon-overcast.png",
+  "clear": "/images/icon-clear.png"
+} %}
+
+{% set key = weather | lower | replace(" ", "") %}
+{% set iconPath = icons[key] or "/images/icon-default.png" %}
+
+<img 
+  src="{{ iconPath }}" 
+  alt="{{ weather }} icon" 
+  class="weather-icon"
+>
+

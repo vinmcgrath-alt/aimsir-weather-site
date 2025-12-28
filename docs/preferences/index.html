@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preferences</title>
+
+  <!-- Bulma -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<!-- Flavicon code -->
+<link rel="icon" type="image/png" href="/images/aimsirflavicon.png">
+<link rel="shortcut icon" href="/images/aimsirflavicon.png">
+
+<body>
+
+  <!-- HERO HEADER WITH LOGO ABOVE NAVIGATION -->
+  <section class="hero is-bold">
+
+    <!-- LOGO FIRST -->
+    <div class="hero-body" style="padding-top: 0.5rem; padding-bottom: 0.5rem;">
+      <div class="container has-text-centered">
+        <img src="/images/aimsirlogowhite.png" alt="Aimsir Logo" style="max-height: 10rem;">
+      </div>
+    </div>
+
+    <!-- Navigation tabs in hero footer -->
+    <div class="hero-foot">
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-menu is-active">
+      <div class="navbar-start is-flex is-justify-content-center" style="width: 100%;">
+
+        <a class="navbar-item" href="/">Dashboard</a>
+        <!-- City dropdown -->
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-item">Cities</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="/cities/dublin/">Dublin</a>
+            <a class="navbar-item" href="/cities/cork/">Cork</a>
+            <a class="navbar-item" href="/cities/limerick/">Limerick</a>
+            <a class="navbar-item" href="/cities/galway/">Galway</a>
+            <a class="navbar-item" href="/cities/waterford/">Waterford</a>
+            <a class="navbar-item" href="/cities/belfast/">Belfast</a>
+          </div>
+        </div>
+        <!-- Tabs again -->
+        <a class="navbar-item" href="/preferences/">Preferences</a>
+        <a class="navbar-item" href="/bonus/">Irish Weather Facts</a>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main class="section">
+    <div class="container">
+      
+<h1 class="title">Your Preferences</h1>
+<p class="subtitle">Tune Aimsir to match your needs.</p>
+
+<div class="columns">
+
+  <!-- WEATHER SETTINGS -->
+  <div class="column">
+    <section class="box" style="background-color:#32D3A6;">
+      <h2 class="title is-5" style="margin-bottom:0.5rem;">Weather Settings</h2>
+
+      <!-- Temperature Units -->
+      <div class="field" style="margin-bottom:0.75rem;">
+        <label class="label" style="margin-bottom:0.25rem;">Temperature Units</label>
+        <div class="control" style="display:flex; gap:1rem;">
+          <label class="radio">
+            <input type="radio" name="temp" value="celsius" checked>
+            Celsius
+          </label>
+          <label class="radio">
+            <input type="radio" name="temp" value="fahrenheit">
+            Fahrenheit
+          </label>
+        </div>
+      </div>
+
+      <!-- Activity Suggestions -->
+      <div class="field" style="margin-bottom:0.75rem;">
+        <label class="label" style="margin-bottom:0.25rem;">Activity Suggestions</label>
+        <div class="control" style="display:flex; gap:1rem;">
+          <label class="radio">
+            <input type="radio" name="activity" value="outdoor" checked>
+            Outdoor
+          </label>
+          <label class="radio">
+            <input type="radio" name="activity" value="indoor">
+            Indoor
+          </label>
+        </div>
+      </div>
+
+      <!-- Weather Icons -->
+      <div class="field" style="margin-bottom:0.75rem;">
+        <label class="label" style="margin-bottom:0.25rem;">Weather Icons</label>
+        <div class="control" style="display:flex; gap:1rem;">
+          <label class="radio">
+            <input type="radio" name="icons" value="show" checked>
+            Show
+          </label>
+          <label class="radio">
+            <input type="radio" name="icons" value="hide">
+            Hide
+          </label>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <!-- PERSONAL SETTINGS -->
+  <div class="column">
+    <section class="box" style="background-color:#FFB27F;">
+      <h2 class="title is-5" style="margin-bottom:0.5rem;">Personal Settings</h2>
+
+      <!-- Theme -->
+      <div class="field" style="margin-bottom:0.75rem;">
+        <label class="label" style="margin-bottom:0.25rem;">Theme</label>
+        <div class="control" style="display:flex; gap:1rem;">
+          <label class="radio">
+            <input type="radio" name="theme" value="light" checked>
+            Light
+          </label>
+          <label class="radio">
+            <input type="radio" name="theme" value="dark">
+            Dark
+          </label>
+        </div>
+      </div>
+
+      <!-- Notifications -->
+      <div class="field" style="margin-bottom:0.75rem;">
+        <label class="label" style="margin-bottom:0.25rem;">Notifications</label>
+        <div class="control" style="display:flex; gap:1rem;">
+          <label class="radio">
+            <input type="radio" name="notify" value="off" checked>
+            Off
+          </label>
+          <label class="radio">
+            <input type="radio" name="notify" value="on">
+            On
+          </label>
+        </div>
+      </div>
+
+      <!-- Compact Mode -->
+      <div class="field" style="margin-bottom:0.75rem;">
+        <label class="label" style="margin-bottom:0.25rem;">Compact Mode</label>
+        <div class="control" style="display:flex; gap:1rem;">
+          <label class="radio">
+            <input type="radio" name="compact" value="normal" checked>
+            Normal
+          </label>
+          <label class="radio">
+            <input type="radio" name="compact" value="compact">
+            Compact
+          </label>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+</div>
+
+    </div>
+  </main>
+
+<!-- FOOTER -->
+<footer class="section" style="
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 1.5rem 1rem;
+  background-color: transparent;
+">
+
+  <div class="columns is-vcentered is-mobile" style="align-items: flex-end;">
+
+    <!-- Left spacer -->
+    <div class="column is-3"></div>
+
+    <!-- Centre: Navigation + Attribution -->
+    <div class="column has-text-centered">
+      <nav style="margin-bottom: 0.5rem;">
+        <a href="/index.html" style="margin: 0 1rem; color: #000;">Dashboard</a>
+        <a href="/preferences/" style="margin: 0 1rem; color: #000;">Preferences</a>
+        <a href="/facts/" style="margin: 0 1rem; color: #000;">Irish Weather</a>
+      </nav>
+
+      <p style="color: #000; font-size: 0.9rem; margin-top: 0.5rem;">
+        Website by Vincent McGrath @ SETU 2025
+      </p>
+    </div>
+
+    <!-- Right: Logo fixed to edge -->
+    <div class="column is-3 has-text-right" style="padding-right: 1rem;">
+      <img src="/images/aimsirlogo.png" 
+           alt="Aimsir Logo" 
+           style="max-height: 4rem;">
+    </div>
+
+  </div>
+
+</footer>
+
+</body>
+</html>

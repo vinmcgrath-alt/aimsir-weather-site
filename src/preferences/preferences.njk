@@ -1,0 +1,117 @@
+---
+layout: layouts/base.njk
+title: Preferences
+---
+
+<h1 class="title">Your Preferences</h1>
+<p class="subtitle">Tune Aimsir to match your needs.</p>
+
+<div class="columns">
+
+  <!-- WEATHER SETTINGS -->
+  <div class="column">
+    <section class="box" style="background-color:#32D3A6;">
+      <h2 class="title is-5" style="margin-bottom:0.5rem;">Weather Settings</h2>
+
+      <!-- Temperature Units -->
+      <div class="field" style="margin-bottom:0.75rem;">
+        <label class="label" style="margin-bottom:0.25rem;">Temperature Units</label>
+        <div class="control" style="display:flex; gap:1rem;">
+          <label class="radio">
+            <input type="radio" name="temp" value="celsius" checked>
+            Celsius
+          </label>
+          <label class="radio">
+            <input type="radio" name="temp" value="fahrenheit">
+            Fahrenheit
+          </label>
+        </div>
+      </div>
+
+      <!-- Activity Suggestions -->
+      <div class="field" style="margin-bottom:0.75rem;">
+        <label class="label" style="margin-bottom:0.25rem;">Activity Suggestions</label>
+        <div class="control" style="display:flex; gap:1rem;">
+          <label class="radio">
+            <input type="radio" name="activity" value="outdoor" checked>
+            Outdoor
+          </label>
+          <label class="radio">
+            <input type="radio" name="activity" value="indoor">
+            Indoor
+          </label>
+        </div>
+      </div>
+
+      <!-- Weather Icons -->
+      <div class="field" style="margin-bottom:0.75rem;">
+        <label class="label" style="margin-bottom:0.25rem;">Weather Icons</label>
+        <div class="control" style="display:flex; gap:1rem;">
+          <label class="radio">
+            <input type="radio" name="icons" value="show" checked>
+            Show
+          </label>
+          <label class="radio">
+            <input type="radio" name="icons" value="hide">
+            Hide
+          </label>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <!-- PERSONAL SETTINGS -->
+  <div class="column">
+    <section class="box" style="background-color:#FFB27F;">
+      <h2 class="title is-5" style="margin-bottom:0.5rem;">Personal Settings</h2>
+
+      <!-- Theme -->
+      <div class="field" style="margin-bottom:0.75rem;">
+        <label class="label" style="margin-bottom:0.25rem;">Theme</label>
+        <div class="control" style="display:flex; gap:1rem;">
+          <label class="radio">
+            <input type="radio" name="theme" value="light" checked>
+            Light
+          </label>
+          <label class="radio">
+            <input type="radio" name="theme" value="dark">
+            Dark
+          </label>
+        </div>
+      </div>
+
+      <!-- Notifications -->
+      <div class="field" style="margin-bottom:0.75rem;">
+        <label class="label" style="margin-bottom:0.25rem;">Notifications</label>
+        <div class="control" style="display:flex; gap:1rem;">
+          <label class="radio">
+            <input type="radio" name="notify" value="off" checked>
+            Off
+          </label>
+          <label class="radio">
+            <input type="radio" name="notify" value="on">
+            On
+          </label>
+        </div>
+      </div>
+
+      <!-- Compact Mode -->
+      <div class="field" style="margin-bottom:0.75rem;">
+        <label class="label" style="margin-bottom:0.25rem;">Compact Mode</label>
+        <div class="control" style="display:flex; gap:1rem;">
+          <label class="radio">
+            <input type="radio" name="compact" value="normal" checked>
+            Normal
+          </label>
+          <label class="radio">
+            <input type="radio" name="compact" value="compact">
+            Compact
+          </label>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+</div>
