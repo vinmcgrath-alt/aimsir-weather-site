@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belfast Weather</title>
+
+  <!-- Bulma -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/aimsir-weather-site/css/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/aimsir-weather-site/images/aimsirflavicon.png">
+  <link rel="shortcut icon" href="/aimsir-weather-site/images/aimsirflavicon.png">
+</head>
+
+<body>
+
+  <!-- HERO HEADER WITH LOGO ABOVE NAVIGATION -->
+  <section class="hero is-bold">
+
+    <!-- LOGO FIRST -->
+    <div class="hero-body" style="padding-top: 0.5rem; padding-bottom: 0.5rem;">
+      <div class="container has-text-centered">
+        <img src="/aimsir-weather-site/images/aimsirlogowhite.png" 
+             alt="Aimsir Logo" 
+             style="max-height: 10rem;">
+      </div>
+    </div>
+
+    <!-- Navigation tabs in hero footer -->
+    <div class="hero-foot">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-menu is-active">
+          <div class="navbar-start is-flex is-justify-content-center" style="width: 100%;">
+
+            <!-- Dashboard -->
+            <a class="navbar-item" href="/aimsir-weather-site/">Dashboard</a>
+
+            <!-- City dropdown -->
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-item">Cities</a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="/aimsir-weather-site/cities/dublin/">Dublin</a>
+                <a class="navbar-item" href="/aimsir-weather-site/cities/cork/">Cork</a>
+                <a class="navbar-item" href="/aimsir-weather-site/cities/limerick/">Limerick</a>
+                <a class="navbar-item" href="/aimsir-weather-site/cities/galway/">Galway</a>
+                <a class="navbar-item" href="/aimsir-weather-site/cities/waterford/">Waterford</a>
+                <a class="navbar-item" href="/aimsir-weather-site/cities/belfast/">Belfast</a>
+              </div>
+            </div>
+
+            <!-- Other pages -->
+            <a class="navbar-item" href="/aimsir-weather-site/preferences/">Preferences</a>
+            <a class="navbar-item" href="/aimsir-weather-site/bonus/">Irish Weather Facts</a>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main class="section">
+    <div class="container">
+      
+
+
+<h1 class="title">Belfast Weather</h1>
+<p class="subtitle">Today’s conditions and 7‑day forecast</p>
+
+
+
+<section class="box" style="padding:0; position:relative; overflow:hidden;">
+
+  <figure class="image banner-slim" style="margin:0;">
+    <img src="/aimsir-weather-site/images/belfast.png" alt="Belfast banner">
+  </figure>
+
+  <!-- OVERLAY CONTENT -->
+  <div class="weather-overlay">
+    <h2 class="title is-4" style="color:white; margin-bottom:0.25rem;">Today</h2>
+    <p><strong>Weather:</strong> Showers</p>
+    <p><strong>Temperature:</strong> 7°C</p>
+    <p><strong>Wind:</strong> 18 km/h</p>
+  </div>
+
+</section>
+
+
+<section class="section">
+  <h2 class="title is-4">7‑Day Forecast</h2>
+
+  <div class="columns is-multiline">
+    
+      <div class="column is-one-quarter">
+  <div class="box forecast-box has-text-centered">
+
+    <div class="forecast-day">Monday</div>
+
+    
+    
+
+
+
+
+
+
+<img 
+  src="/aimsir-weather-site/images/icon-showers.png" 
+  alt="Showers icon" 
+  class="weather-icon"
+>
+
+
+
+
+    <p>Showers</p>
+    <p><strong>7°C</strong></p>
+
+  </div>
+</div>
+
+
+    
+      <div class="column is-one-quarter">
+  <div class="box forecast-box has-text-centered">
+
+    <div class="forecast-day">Tuesday</div>
+
+    
+    
+
+
+
+
+
+
+<img 
+  src="/aimsir-weather-site/images/icon-cloudy.png" 
+  alt="Cloudy icon" 
+  class="weather-icon"
+>
+
+
+
+
+    <p>Cloudy</p>
+    <p><strong>8°C</strong></p>
+
+  </div>
+</div>
+
+
+    
+      <div class="column is-one-quarter">
+  <div class="box forecast-box has-text-centered">
+
+    <div class="forecast-day">Wednesday</div>
+
+    
+    
+
+
+
+
+
+
+<img 
+  src="/aimsir-weather-site/images/icon-lightrain.png" 
+  alt="Light Rain icon" 
+  class="weather-icon"
+>
+
+
+
+
+    <p>Light Rain</p>
+    <p><strong>7°C</strong></p>
+
+  </div>
+</div>
+
+
+    
+      <div class="column is-one-quarter">
+  <div class="box forecast-box has-text-centered">
+
+    <div class="forecast-day">Thursday</div>
+
+    
+    
+
+
+
+
+
+
+<img 
+  src="/aimsir-weather-site/images/icon-windy.png" 
+  alt="Windy icon" 
+  class="weather-icon"
+>
+
+
+
+
+    <p>Windy</p>
+    <p><strong>6°C</strong></p>
+
+  </div>
+</div>
+
+
+    
+      <div class="column is-one-quarter">
+  <div class="box forecast-box has-text-centered">
+
+    <div class="forecast-day">Friday</div>
+
+    
+    
+
+
+
+
+
+
+<img 
+  src="/aimsir-weather-site/images/icon-sunnyspells.png" 
+  alt="Sunny Spells icon" 
+  class="weather-icon"
+>
+
+
+
+
+    <p>Sunny Spells</p>
+    <p><strong>9°C</strong></p>
+
+  </div>
+</div>
+
+
+    
+      <div class="column is-one-quarter">
+  <div class="box forecast-box has-text-centered">
+
+    <div class="forecast-day">Saturday</div>
+
+    
+    
+
+
+
+
+
+
+<img 
+  src="/aimsir-weather-site/images/icon-overcast.png" 
+  alt="Overcast icon" 
+  class="weather-icon"
+>
+
+
+
+
+    <p>Overcast</p>
+    <p><strong>8°C</strong></p>
+
+  </div>
+</div>
+
+
+    
+      <div class="column is-one-quarter">
+  <div class="box forecast-box has-text-centered">
+
+    <div class="forecast-day">Sunday</div>
+
+    
+    
+
+
+
+
+
+
+<img 
+  src="/aimsir-weather-site/images/icon-clear.png" 
+  alt="Clear icon" 
+  class="weather-icon"
+>
+
+
+
+
+    <p>Clear</p>
+    <p><strong>5°C</strong></p>
+
+  </div>
+</div>
+
+
+    
+  </div>
+</section>
+
+
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="section" style="
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 1.5rem 1rem;
+    background-color: transparent;
+  ">
+
+    <div class="columns is-vcentered is-mobile" style="align-items: flex-end;">
+
+      <!-- Left spacer -->
+      <div class="column is-3"></div>
+
+      <!-- Centre: Navigation + Attribution -->
+      <div class="column has-text-centered">
+        <nav style="margin-bottom: 0.5rem;">
+          <a href="/aimsir-weather-site/" style="margin: 0 1rem; color: #000;">Dashboard</a>
+          <a href="/aimsir-weather-site/preferences/" style="margin: 0 1rem; color: #000;">Preferences</a>
+          <a href="/aimsir-weather-site/facts/" style="margin: 0 1rem; color: #000;">Irish Weather</a>
+        </nav>
+
+        <p style="color: #000; font-size: 0.9rem; margin-top: 0.5rem;">
+          Website by Vincent McGrath @ SETU 2025
+        </p>
+      </div>
+
+      <!-- Right: Logo fixed to edge -->
+      <div class="column is-3 has-text-right" style="padding-right: 1rem;">
+        <img src="/aimsir-weather-site/images/aimsirlogo.png" 
+             alt="Aimsir Logo" 
+             style="max-height: 4rem;">
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>

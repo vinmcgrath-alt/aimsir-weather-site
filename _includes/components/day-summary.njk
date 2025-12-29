@@ -1,0 +1,14 @@
+<div class="column is-one-quarter">
+  <div class="box forecast-box has-text-centered">
+
+    <div class="forecast-day">{{ day.day }}</div>
+
+    {% set weather = day.weather %}
+    {% include "components/weather-icon.njk" %}
+
+    <p>{{ day.weather }}</p>
+    <p><strong>{{ day.temp }}°C</strong></p>
+
+  </div>
+</div>
+

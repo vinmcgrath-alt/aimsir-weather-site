@@ -1,0 +1,41 @@
+---
+layout: layouts/base.njk
+title: Galway Weather
+---
+
+{% set city = cities[3] %}
+
+<h1 class="title">{{ city.name }} Weather</h1>
+<p class="subtitle">Today’s conditions and 7‑day forecast</p>
+
+{# Optional: derive banner automatically from slug #}
+{% set banner = "/aimsir-weather-site/images/" + city.slug + ".png" %}
+
+<section class="box" style="padding:0; position:relative; overflow:hidden;">
+
+  <figure class="image banner-slim" style="margin:0;">
+    <img src="{{ banner }}" alt="{{ city.name }} banner">
+  </figure>
+
+  <!-- OVERLAY CONTENT -->
+  <div class="weather-overlay">
+
+    <h2 class="title is-4" style="color:white; margin-bottom:0.25rem;">Today</h2>
+    <p><strong>Weather:</strong> {{ city.today.weather }}</p>
+    <p><strong>Temperature:</strong> {{ city.today.temp }}°C</p>
+    <p><strong>Wind:</strong> {{ city.today.wind }} km/h</p>
+  </div>
+
+</section>
+
+<section class="section">
+  <h2 class="title is-4">7‑Day Forecast</h2>
+
+  <div class="columns is-multiline">
+    {% for day in city.forecast %}
+      {% include "components/day-summary.njk" %}
+    {% endfor %}
+  </div>
+</section>
+
+

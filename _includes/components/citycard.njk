@@ -1,0 +1,25 @@
+<div class="column is-one-third">
+  <a href="/cities/{{ city.slug }}/" class="card-link">
+
+    <div class="card">
+
+      <div class="card-image">
+        <figure class="image is-16by9">
+          <img src="{{ city.image }}" alt="{{ city.name }} image">
+        </figure>
+      </div>
+
+      <div class="card-content has-text-centered">
+        <p class="title is-4"><b>{{ city.name }}</b></p>
+
+        <p class="subtitle is-6"><b>
+          {% set weather = city.today.weather %}
+          {% include "components/weather-icon.njk" %}
+          {{ city.today.weather }} • {{ city.today.temp }}°C
+        </b></p>
+      </div>
+
+    </div>
+
+  </a>
+</div>

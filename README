@@ -1,0 +1,109 @@
+README
+
+Aimsir is a clean, fast, and fully static weather website built with HTML, Eleventy, Nunjucks, and Bulma. It is designed as a weather assistant for people in Ireland or visitors to the 6 Irish cities to keep them up to date onIrish weather but also to guide them to suitable activities for the appropriate weather. 
+
+The site provides:
+
+A dashboard showing today’s conditions for all six cities
+
+Individual city pages with a detailed 7‑day forecast
+
+A cohesive visual identity using the Aimsir logo, colour palette, favicon, and consistent component styling
+
+Developer:
+
+This site was developed by Vincent McGRath as part of the Web Design module for the Certificate in Computer Science at SETU 2025
+
+Installation:
+
+-Type cmd in search. Open command prompt window 
+
+-Locate the folder project root and direct in command prompt (cd \project-root)
+
+-npm install (Node.js required to run Eleventy, Bulma, JSON etc.)
+
+-npx @11ty/eleventy --serve (this will run Eleventy)
+
+-Command prompt will show http://localhost:8080
+
+-Paste http://localhost:8080 into Chrome browser 
+
+-Website should now be visible and running locally
+
+-The main site entry point is ‘index.html’ referred to as Dashboard.
+
+
+Navigation:
+
+The website can be navigated through a menu available within the header.
+Th efollowing options are available:
+
+- Dashboard — Main homepage showing today’s weather for all cities
+
+- Cities — Dropdown linking to each of the six individual city pages
+
+- Preferences — Allows users to select their own weather/activity preferences
+
+- Weather Facts — Provides Irish weather facts and links to suitable activities
+
+Navigation is also supported through internal links within pages and the footer.
+
+Technologies Used:
+
+The folowing technologies are incorporated into the
+
+HTML — Structure and content
+
+Eleventy (11ty) — Static site generator
+
+Nunjucks — Templating engine for layouts and components
+
+Bulma — CSS framework for layout and styling
+
+Custom JSON — Hardcoded weather and city data
+
+Modular components — Cards, icons, summaries, banners
+
+Favicon support — /images/aimsirflavicon.png
+
+
+The Project Structure:
+
+project-root/ 
+│ 
+├── src/ 
+│   ├── _data/            # JSON data (weather data for each city- current & 7day & metadata) 
+│   ├── _includes/ 
+│   │   ├── components/   # Reusable UI components (headers, footers, icons, cards, summaries) 
+│   │   └── layouts/      # Base layouts (base.njk, basics of all site pages) 
+│   ├── cities/           # Individual city pages (Each of 6 cities individual pages) 
+│   ├── bonus/            # Bonus page (extra page with table + activity cards) 
+│   ├── preferences/      # Preferences page (A/B radio button toggles) 
+│   ├── css/              # Bulma + custom styling (colour, fonts etc.) 
+│   ├── images/           # Weather icons, logo, city images, banners, favicon
+│   └── index.njk         # Homepage (Dashboard)
+│ 
+├── _site/ # Auto‑generated output (do not edit) 
+├── .eleventy.js # Eleventy configuration 
+└── package.json # Dependencies & scripts
+
+
+Data Model:
+
+The site uses structured JSON hardcoded data for each city and its weather information.
+
+The following fields are used to retrieve and display this data in a consistent and meaningful way across the site:
+
+slug — This has been used to create URL‑safe city identifier used for banners and links
+
+name — Human‑readable city name
+
+today — Object containing today’s weather, temperature, and wind
+
+forecast — Array of 7 objects (one per day)
+
+weather — Weather description used to map to an icon
+
+temp — Temperature in °C
+
+wind — Wind speed in km/h

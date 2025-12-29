@@ -1,0 +1,41 @@
+---
+layout: layouts/base.njk
+title: Dashboard
+---
+
+<h1 class="title has-text-left" style="padding: 0;">
+  <b>Aimsir:</b> Your Irish Weather Assistant
+</h1>
+
+<div class="content">
+
+  <p>
+    Ireland is known as the Emerald Isle, and part of that is due to our unique climate.
+    Sitting on the edge of Europe, surrounded by water, the Atlantic Ocean and its prevailing winds
+    shape our weather. That means three things:
+  </p>
+
+  <ol>
+    <li>We have a relatively mild climate (it's rarely extreme!)</li>
+    <li>It can change quickly (four seasons in a day!)</li>
+    <li>It can rain — a lot (bring a coat or an umbrella!)</li>
+  </ol>
+
+  <p>
+    So in many ways, it's a great climate for getting out and exploring — you just need to know how to do that.
+  </p>
+
+  <p>
+    That’s why we created <b>Aimsir</b> — to provide specific, localised weather updates and suggested activities
+    for both locals and visitors. You can also tailor the experience to your own preferences for more relevant results.
+  </p>
+
+  <p><b>Select a city below to view a more detailed forecast.</b></p>
+
+</div>
+
+<div class="columns is-multiline">
+  {% for city in cities %}
+    {% include "components/citycard.njk" %}
+  {% endfor %}
+</div>
