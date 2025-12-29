@@ -2,8 +2,8 @@
   {
     "name": "Dublin",
     "slug": "dublin",
-    "image": "/images/dublin.png",
-    "banner": "/images/dublin.png",
+    "image": "images/dublin.png",
+    "banner": "images/dublin.png",
     "today": { "weather": "Cloudy", "temp": 11, "wind": 14 },
     "forecast": [
       { "day": "Monday", "weather": "Cloudy", "temp": 11, "wind": 12 },
@@ -18,8 +18,8 @@
   {
     "name": "Cork",
     "slug": "cork",
-    "image": "/images/cork.png",
-    "banner": "/images/cork.png",
+    "image": "images/cork.png",
+    "banner": "images/cork.png",
     "today": { "weather": "Light Rain", "temp": 10, "wind": 20 },
     "forecast": [
       { "day": "Monday", "weather": "Light Rain", "temp": 10, "wind": 18 },
@@ -34,8 +34,8 @@
   {
     "name": "Limerick",
     "slug": "limerick",
-    "image": "/images/limerick.png",
-    "banner": "/images/limerick.png",
+    "image": "images/limerick.png",
+    "banner": "images/limerick.png",
     "today": { "weather": "Overcast", "temp": 9, "wind": 16 },
     "forecast": [
       { "day": "Monday", "weather": "Overcast", "temp": 9, "wind": 14 },
@@ -50,8 +50,8 @@
   {
     "name": "Galway",
     "slug": "galway",
-    "image": "/images/galway.png",
-    "banner": "/images/galway.png",
+    "image": "images/galway.png",
+    "banner": "images/galway.png",
     "today": { "weather": "Windy", "temp": 8, "wind": 28 },
     "forecast": [
       { "day": "Monday", "weather": "Windy", "temp": 8, "wind": 28 },
@@ -66,8 +66,8 @@
   {
     "name": "Waterford",
     "slug": "waterford",
-    "image": "/images/waterford.png",
-    "banner": "/images/waterford.png",
+    "image": "images/waterford.png",
+    "banner": "images/waterford.png",
     "today": { "weather": "Sunny Spells", "temp": 12, "wind": 10 },
     "forecast": [
       { "day": "Monday", "weather": "Sunny Spells", "temp": 12, "wind": 10 },
@@ -82,8 +82,8 @@
   {
     "name": "Belfast",
     "slug": "belfast",
-    "image": "/images/belfast.png",
-    "banner": "/images/belfast.png",
+    "image": "images/belfast.png",
+    "banner": "images/belfast.png",
     "today": { "weather": "Showers", "temp": 7, "wind": 18 },
     "forecast": [
       { "day": "Monday", "weather": "Showers", "temp": 7, "wind": 18 },

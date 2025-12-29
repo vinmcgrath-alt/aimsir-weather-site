@@ -1,6 +1,6 @@
 /* Hero banner background */
 section.hero {
-  background-image: url("/aimsir-weather-site/images/banner1.jpg");
+  background-image: url("images/banner1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -94,12 +94,12 @@ section.hero {
   color: white;
   padding: 0.5rem;
   border-radius: 4px 4px 0 0;
-  margin: -1rem -1rem 1rem -1rem;
+  margin: -1rem -1rem 1rem -1rem; /* pulls it to the card edges */
   text-align: center;
 }
 
 .forecast-wrapper {
-  background-color: rgba(46, 125, 50, 0.08);
+  background-color: rgba(46, 125, 50, 0.08); /* subtle Aimsir green tint */
   padding: 1.5rem;
   border-radius: 8px;
   margin-top: 1.5rem;

@@ -8,8 +8,8 @@ title: Dublin Weather
 <h1 class="title">{{ city.name }} Weather</h1>
 <p class="subtitle">Today’s conditions and 7‑day forecast</p>
 
-{# Banner image derived from slug #}
-{% set banner = "/aimsir-weather-site/images/" + city.slug + ".png" %}
+{# Optional: derive banner automatically from slug #}
+{% set banner = "/images/" + city.slug + ".png" %}
 
 <section class="box" style="padding:0; position:relative; overflow:hidden;">
 
@@ -17,8 +17,9 @@ title: Dublin Weather
     <img src="{{ banner }}" alt="{{ city.name }} banner">
   </figure>
 
-  <!-- OVERLAY CONTENT -->
+  <!-- overlay text on to image -->
   <div class="weather-overlay">
+
     <h2 class="title is-4" style="color:white; margin-bottom:0.25rem;">Today</h2>
     <p><strong>Weather:</strong> {{ city.today.weather }}</p>
     <p><strong>Temperature:</strong> {{ city.today.temp }}°C</p>
@@ -26,6 +27,7 @@ title: Dublin Weather
   </div>
 
 </section>
+
 
 <section class="section">
   <h2 class="title is-4">7‑Day Forecast</h2>
@@ -36,5 +38,4 @@ title: Dublin Weather
     {% endfor %}
   </div>
 </section>
-
 

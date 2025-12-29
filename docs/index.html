@@ -9,12 +9,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="/aimsir-weather-site/css/style.css">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="/aimsir-weather-site/images/aimsirflavicon.png">
-  <link rel="shortcut icon" href="/aimsir-weather-site/images/aimsirflavicon.png">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
+<!-- Flavicon code -->
+<link rel="icon" type="image/png" href="images/aimsirflavicon.png">
+<link rel="shortcut icon" href="images/aimsirflavicon.png">
 
 <body>
 
@@ -24,42 +24,37 @@
     <!-- LOGO FIRST -->
     <div class="hero-body" style="padding-top: 0.5rem; padding-bottom: 0.5rem;">
       <div class="container has-text-centered">
-        <img src="/aimsir-weather-site/images/aimsirlogowhite.png" 
-             alt="Aimsir Logo" 
-             style="max-height: 10rem;">
+        <img src="images/aimsirlogowhite.png" alt="Aimsir Logo" style="max-height: 10rem;">
       </div>
     </div>
 
     <!-- Navigation tabs in hero footer -->
     <div class="hero-foot">
-      <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-menu is-active">
-          <div class="navbar-start is-flex is-justify-content-center" style="width: 100%;">
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-menu is-active">
+      <div class="navbar-start is-flex is-justify-content-center" style="width: 100%;">
 
-            <!-- Dashboard -->
-            <a class="navbar-item" href="/aimsir-weather-site/">Dashboard</a>
-
-            <!-- City dropdown -->
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-item">Cities</a>
-              <div class="navbar-dropdown">
-                <a class="navbar-item" href="/aimsir-weather-site/cities/dublin/">Dublin</a>
-                <a class="navbar-item" href="/aimsir-weather-site/cities/cork/">Cork</a>
-                <a class="navbar-item" href="/aimsir-weather-site/cities/limerick/">Limerick</a>
-                <a class="navbar-item" href="/aimsir-weather-site/cities/galway/">Galway</a>
-                <a class="navbar-item" href="/aimsir-weather-site/cities/waterford/">Waterford</a>
-                <a class="navbar-item" href="/aimsir-weather-site/cities/belfast/">Belfast</a>
-              </div>
-            </div>
-
-            <!-- Other pages -->
-            <a class="navbar-item" href="/aimsir-weather-site/preferences/">Preferences</a>
-            <a class="navbar-item" href="/aimsir-weather-site/bonus/">Irish Weather Facts</a>
-
+        <a class="navbar-item" href="/">Dashboard</a>
+        <!-- City dropdown -->
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-item">Cities</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="cities/dublin/">Dublin</a>
+            <a class="navbar-item" href="cities/cork/">Cork</a>
+            <a class="navbar-item" href="cities/limerick/">Limerick</a>
+            <a class="navbar-item" href="cities/galway/">Galway</a>
+            <a class="navbar-item" href="cities/waterford/">Waterford</a>
+            <a class="navbar-item" href="cities/belfast/">Belfast</a>
           </div>
         </div>
-      </nav>
+        <!-- Tabs again -->
+        <a class="navbar-item" href="preferences/">Preferences</a>
+        <a class="navbar-item" href="bonus/">Irish Weather Facts</a>
+      </div>
     </div>
+  </nav>
+</div>
+
 
   </section>
 
@@ -97,7 +92,7 @@
   <p><b>Select a city below to view a more detailed forecast.</b></p>
 
 </div>
-
+<!-- Individual city cards are being called here from citycards -->
 <div class="columns is-multiline">
   
     <div class="column is-one-third">
@@ -107,7 +102,7 @@
 
       <div class="card-image">
         <figure class="image is-16by9">
-          <img src="/images/dublin.png" alt="Dublin image">
+          <img src="images/dublin.png" alt="Dublin image">
         </figure>
       </div>
 
@@ -121,16 +116,13 @@
 
 
 
-
-
 <img 
-  src="/aimsir-weather-site/images/icon-cloudy.png" 
+  src="images/icon-cloudy.png" 
   alt="Cloudy icon" 
   class="weather-icon"
 >
 
-
-
+<!-- modular component. to create dynamic icons that are chosen based on JSON data -->
           Cloudy • 11°C
         </b></p>
       </div>
@@ -140,6 +132,7 @@
   </a>
 </div>
 
+<!-- Creates the cards pulling the relevant info from teh JSON -->
   
     <div class="column is-one-third">
   <a href="/cities/cork/" class="card-link">
@@ -148,7 +141,7 @@
 
       <div class="card-image">
         <figure class="image is-16by9">
-          <img src="/images/cork.png" alt="Cork image">
+          <img src="images/cork.png" alt="Cork image">
         </figure>
       </div>
 
@@ -162,16 +155,13 @@
 
 
 
-
-
 <img 
-  src="/aimsir-weather-site/images/icon-lightrain.png" 
+  src="images/icon-lightrain.png" 
   alt="Light Rain icon" 
   class="weather-icon"
 >
 
-
-
+<!-- modular component. to create dynamic icons that are chosen based on JSON data -->
           Light Rain • 10°C
         </b></p>
       </div>
@@ -181,6 +171,7 @@
   </a>
 </div>
 
+<!-- Creates the cards pulling the relevant info from teh JSON -->
   
     <div class="column is-one-third">
   <a href="/cities/limerick/" class="card-link">
@@ -189,7 +180,7 @@
 
       <div class="card-image">
         <figure class="image is-16by9">
-          <img src="/images/limerick.png" alt="Limerick image">
+          <img src="images/limerick.png" alt="Limerick image">
         </figure>
       </div>
 
@@ -203,16 +194,13 @@
 
 
 
-
-
 <img 
-  src="/aimsir-weather-site/images/icon-overcast.png" 
+  src="images/icon-overcast.png" 
   alt="Overcast icon" 
   class="weather-icon"
 >
 
-
-
+<!-- modular component. to create dynamic icons that are chosen based on JSON data -->
           Overcast • 9°C
         </b></p>
       </div>
@@ -222,6 +210,7 @@
   </a>
 </div>
 
+<!-- Creates the cards pulling the relevant info from teh JSON -->
   
     <div class="column is-one-third">
   <a href="/cities/galway/" class="card-link">
@@ -230,7 +219,7 @@
 
       <div class="card-image">
         <figure class="image is-16by9">
-          <img src="/images/galway.png" alt="Galway image">
+          <img src="images/galway.png" alt="Galway image">
         </figure>
       </div>
 
@@ -244,16 +233,13 @@
 
 
 
-
-
 <img 
-  src="/aimsir-weather-site/images/icon-windy.png" 
+  src="images/icon-windy.png" 
   alt="Windy icon" 
   class="weather-icon"
 >
 
-
-
+<!-- modular component. to create dynamic icons that are chosen based on JSON data -->
           Windy • 8°C
         </b></p>
       </div>
@@ -263,6 +249,7 @@
   </a>
 </div>
 
+<!-- Creates the cards pulling the relevant info from teh JSON -->
   
     <div class="column is-one-third">
   <a href="/cities/waterford/" class="card-link">
@@ -271,7 +258,7 @@
 
       <div class="card-image">
         <figure class="image is-16by9">
-          <img src="/images/waterford.png" alt="Waterford image">
+          <img src="images/waterford.png" alt="Waterford image">
         </figure>
       </div>
 
@@ -285,16 +272,13 @@
 
 
 
-
-
 <img 
-  src="/aimsir-weather-site/images/icon-sunnyspells.png" 
+  src="images/icon-sunnyspells.png" 
   alt="Sunny Spells icon" 
   class="weather-icon"
 >
 
-
-
+<!-- modular component. to create dynamic icons that are chosen based on JSON data -->
           Sunny Spells • 12°C
         </b></p>
       </div>
@@ -304,6 +288,7 @@
   </a>
 </div>
 
+<!-- Creates the cards pulling the relevant info from teh JSON -->
   
     <div class="column is-one-third">
   <a href="/cities/belfast/" class="card-link">
@@ -312,7 +297,7 @@
 
       <div class="card-image">
         <figure class="image is-16by9">
-          <img src="/images/belfast.png" alt="Belfast image">
+          <img src="images/belfast.png" alt="Belfast image">
         </figure>
       </div>
 
@@ -326,16 +311,13 @@
 
 
 
-
-
 <img 
-  src="/aimsir-weather-site/images/icon-showers.png" 
+  src="images/icon-showers.png" 
   alt="Showers icon" 
   class="weather-icon"
 >
 
-
-
+<!-- modular component. to create dynamic icons that are chosen based on JSON data -->
           Showers • 7°C
         </b></p>
       </div>
@@ -345,49 +327,50 @@
   </a>
 </div>
 
+<!-- Creates the cards pulling the relevant info from teh JSON -->
   
 </div>
 
     </div>
   </main>
 
-  <!-- FOOTER -->
-  <footer class="section" style="
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    padding: 1.5rem 1rem;
-    background-color: transparent;
-  ">
+<!-- FOOTER -->
+<footer class="section" style="
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 1.5rem 1rem;
+  background-color: transparent;
+">
 
-    <div class="columns is-vcentered is-mobile" style="align-items: flex-end;">
+  <div class="columns is-vcentered is-mobile" style="align-items: flex-end;">
 
-      <!-- Left spacer -->
-      <div class="column is-3"></div>
+    <!-- Left spacer -->
+    <div class="column is-3"></div>
 
-      <!-- Centre: Navigation + Attribution -->
-      <div class="column has-text-centered">
-        <nav style="margin-bottom: 0.5rem;">
-          <a href="/aimsir-weather-site/" style="margin: 0 1rem; color: #000;">Dashboard</a>
-          <a href="/aimsir-weather-site/preferences/" style="margin: 0 1rem; color: #000;">Preferences</a>
-          <a href="/aimsir-weather-site/facts/" style="margin: 0 1rem; color: #000;">Irish Weather</a>
-        </nav>
+    <!-- Centre: Navigation + Attribution -->
+    <div class="column has-text-centered">
+      <nav style="margin-bottom: 0.5rem;">
+        <a href="index.html" style="margin: 0 1rem; color: #000;">Dashboard</a>
+        <a href="preferences/" style="margin: 0 1rem; color: #000;">Preferences</a>
+        <a href="facts/" style="margin: 0 1rem; color: #000;">Irish Weather</a>
+      </nav>
 
-        <p style="color: #000; font-size: 0.9rem; margin-top: 0.5rem;">
-          Website by Vincent McGrath @ SETU 2025
-        </p>
-      </div>
-
-      <!-- Right: Logo fixed to edge -->
-      <div class="column is-3 has-text-right" style="padding-right: 1rem;">
-        <img src="/aimsir-weather-site/images/aimsirlogo.png" 
-             alt="Aimsir Logo" 
-             style="max-height: 4rem;">
-      </div>
-
+      <p style="color: #000; font-size: 0.9rem; margin-top: 0.5rem;">
+        Website by Vincent McGrath @ SETU 2025
+      </p>
     </div>
 
-  </footer>
+    <!-- Right: Logo fixed to edge -->
+    <div class="column is-3 has-text-right" style="padding-right: 1rem;">
+      <img src="images/aimsirlogo.png" 
+           alt="Aimsir Logo" 
+           style="max-height: 4rem;">
+    </div>
+
+  </div>
+
+</footer>
 
 </body>
 </html>
